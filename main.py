@@ -1,6 +1,6 @@
+counter = 0
+
 def on_forever():
-    if input.button_is_pressed(Button.A) or input.button_is_pressed(Button.B):
-        led.enable(True)
-    else:
-        led.enable(False)
+    global counter
+    counter += 1
 basic.forever(on_forever)
